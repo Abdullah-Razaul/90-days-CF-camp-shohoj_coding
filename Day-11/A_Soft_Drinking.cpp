@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int mod = 676767677;
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
+#define coutv(v)      \
+    for (auto &i : v) \
+        cout << i << " ";
+#define cinv(v)       \
+    for (auto &i : v) \
+        cin >> i;
+#define optimize()                \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
+#define endl '\n'
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, k, l, c, d, p, nl, np;
+    cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+    int x = (k*l)/nl;
+    int y = c*d;
+    int z = p/np;
+    int res = min(x,min(y,z))/n;
+    cout<<res<<endl;
+}
